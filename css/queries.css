@@ -124,6 +124,7 @@
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
@@ -154,19 +155,19 @@
     visibility: hidden;
   }
 
-  .nav-open.main-nav {
+  .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
   }
 
-  .icon-mobile-nav[name="close-outline"] {
-    display: none;
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
   }
 
-  .icon-mobile-nav[name="menu-outline"] {
-    display: block;
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 
   .main-nav-list {
