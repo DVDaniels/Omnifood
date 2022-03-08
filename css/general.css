@@ -67,6 +67,7 @@ Best: 10px / 16px = 0.625 = 62.5%, percentage of the users browser font size set
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
